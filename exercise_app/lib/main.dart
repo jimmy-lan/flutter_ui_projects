@@ -28,7 +28,10 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(body: Stack(children: [
       Container(
         height: size.height * .45,
-        decoration: BoxDecoration(color: Color(0xFFF5CeB8))
+        decoration: BoxDecoration(color: Color(0xFFF5CeB8), image: DecorationImage(
+          alignment: Alignment.centerLeft,
+          image: AssetImage("assets/images/undraw_pilates_gpdb.png")
+        ))
       )
     ],),);
   }
