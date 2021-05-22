@@ -38,7 +38,8 @@ class HomeScreen extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       image: AssetImage(
                           "assets/images/undraw_pilates_gpdb.png")))),
-          SafeArea(child: Padding(
+          SafeArea(
+              child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
@@ -51,6 +52,27 @@ class HomeScreen extends StatelessWidget {
                     decoration: BoxDecoration(
                         color: Color(0xFFF2BEA1), shape: BoxShape.circle),
                     child: SvgPicture.asset("assets/icons/menu.svg"),
+                  ),
+                ),
+                Text(
+                  "Good Morning Jimmy",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4
+                      .copyWith(fontWeight: FontWeight.w900),
+                ),
+                Container(
+                  margin: EdgeInsets.symmetric(vertical: 30),
+                  padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
+                  decoration: BoxDecoration(
+                      color: Colors.white,
+                      borderRadius: BorderRadius.circular(29.6)),
+                  child: TextField(
+                    decoration: InputDecoration(
+                      hintText: "Search",
+                      icon: SvgPicture.asset("assets/icons/search.svg"),
+                      border: InputBorder.none,
+                    ),
                   ),
                 )
               ],
