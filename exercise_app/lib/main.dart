@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import './constants.dart';
@@ -63,6 +62,7 @@ class HomeScreen extends StatelessWidget {
                       .copyWith(fontWeight: FontWeight.w900),
                 ),
                 Container(
+                  margin: EdgeInsets.symmetric(vertical: 30),
                   padding: EdgeInsets.symmetric(horizontal: 30, vertical: 5),
                   decoration: BoxDecoration(
                       color: Colors.white,
