@@ -38,19 +38,24 @@ class HomeScreen extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       image: AssetImage(
                           "assets/images/undraw_pilates_gpdb.png")))),
-          Column(
-            children: [
-              Container(
-                height: 52,
-                width: 52,
-                decoration: BoxDecoration(
-                    color: Color(0xFFF2BEA1),
-                    shape: BoxShape.circle
-                ),
-                child: SvgPicture.asset("assets/icons/menu.svg"),
-              )
-            ],
-          )
+          SafeArea(child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Column(
+              children: [
+                Align(
+                  alignment: Alignment.topRight,
+                  child: Container(
+                    height: 52,
+                    width: 52,
+                    padding: EdgeInsets.all(12),
+                    decoration: BoxDecoration(
+                        color: Color(0xFFF2BEA1), shape: BoxShape.circle),
+                    child: SvgPicture.asset("assets/icons/menu.svg"),
+                  ),
+                )
+              ],
+            ),
+          ))
         ],
       ),
     );
