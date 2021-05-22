@@ -38,7 +38,8 @@ class HomeScreen extends StatelessWidget {
                       alignment: Alignment.centerLeft,
                       image: AssetImage(
                           "assets/images/undraw_pilates_gpdb.png")))),
-          SafeArea(child: Padding(
+          SafeArea(
+              child: Padding(
             padding: const EdgeInsets.symmetric(horizontal: 20),
             child: Column(
               children: [
@@ -52,6 +53,13 @@ class HomeScreen extends StatelessWidget {
                         color: Color(0xFFF2BEA1), shape: BoxShape.circle),
                     child: SvgPicture.asset("assets/icons/menu.svg"),
                   ),
+                ),
+                Text(
+                  "Good Morning Jimmy",
+                  style: Theme.of(context)
+                      .textTheme
+                      .headline4
+                      .copyWith(fontWeight: FontWeight.w900),
                 )
               ],
             ),
